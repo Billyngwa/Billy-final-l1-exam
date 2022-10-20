@@ -1,0 +1,15 @@
+// declaring my colors 
+$blue:blue;
+$orange:orange;
+$teal:teal;
+$red:red;
+$oxblood:#4A0404;
+$green:green;
+$lemon-green:#adff29;
+
+// definition of necessary mixins
+
+@mixin container($width, $margin-left) {
+    width:$width;
+    margin-left: $margin-left;
+}
