@@ -6,10 +6,15 @@ $red:red;
 $oxblood:#4A0404;
 $green:green;
 $lemon-green:#adff29;
-
+$font_family:'Lato', sans-serif;
 // definition of necessary mixins
 
 @mixin container($width, $margin-left) {
     width:$width;
     margin-left: $margin-left;
+}
+@mixin displayelementsflex ($align) {
+    display: flex;
+    justify-content: space-between;
+    align-items: $align;
 }

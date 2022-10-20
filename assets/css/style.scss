@@ -2,3 +2,7 @@
 @import './reset';
 @import './header';
 @import './body';
+
+@media (max-width:750px){
+    @import './mobile_and_tablet';
+}

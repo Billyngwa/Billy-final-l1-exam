@@ -1,0 +1,21 @@
+header{
+    .header{
+        @include container(96%, 2%);
+        @include displayelementsflex(center);
+        .hamburger_button{
+            border:none;
+            outline:none;
+            display: block;
+            background-color: transparent;
+        }
+        nav{
+            display: none;
+            &.active{
+                display: block;
+            }
+        }
+    }
+}
+main{
+    display: none;
+}
