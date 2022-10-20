@@ -60,6 +60,12 @@ header .header nav ul li {
   cursor: pointer;
 }
 
+header .header nav ul li.active {
+  -webkit-transition: 2s;
+  transition: 2s;
+  border-bottom: 1px solid blue;
+}
+
 header .header .user_section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -256,6 +262,11 @@ main section .different_tasks .a_task .task_outline ul li .event_day .day {
 
 @media (max-width: 750px) {
   header .header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10;
+    z-index: 999;
+    background-color: white;
     width: 96%;
     margin-left: 2%;
     display: -webkit-box;
@@ -281,7 +292,15 @@ main section .different_tasks .a_task .task_outline ul li .event_day .day {
     display: block;
   }
   main {
-    display: none;
+    position: relative;
+    right: 100%;
+    -webkit-transition: 2s;
+    transition: 2s;
+  }
+  main.active {
+    right: 0%;
+    -webkit-transition: 2s;
+    transition: 2s;
   }
 }
 /*# sourceMappingURL=style.css.map */

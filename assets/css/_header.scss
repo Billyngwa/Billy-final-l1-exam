@@ -23,6 +23,10 @@ header{
                     font-size: 15px;
                     margin:  0px 0px 0px 10px;
                     cursor: pointer;
+                    &.active{
+                        transition: 2s;
+                        border-bottom: 1px solid blue;
+                    }
                 }
             }
         }

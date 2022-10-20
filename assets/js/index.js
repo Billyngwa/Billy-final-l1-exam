@@ -6,4 +6,12 @@ hamburgerButton.addEventListener('click', event => {
 });
 
 //
-var elementMain = document.querySelectorAll('.list_item');
+
+var mainElement = document.querySelector('.main');
+var elementaryMains = document.querySelectorAll('.list_item');
+elementaryMains.forEach(elementaryMain => {
+    elementaryMain.addEventListener('click', event => {
+        elementaryMain.classList.toggle("active");
+        mainElement.classList.toggle("active");
+    });
+});
